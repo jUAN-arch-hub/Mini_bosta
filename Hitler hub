@@ -1,5 +1,5 @@
 local whitelist = {
-    [405628497] = true,  -- Substitua pelo UserId do "andrezinbrproffo"
+    [5030985530] = true,  -- Substitua pelo UserId do "andrezinbrproffo"
     [7707207479] = true,  -- Substitua pelo UserId do "Eugostum241"
     [7707207479] = true,  -- Substitua pelo UserId do "derd232"
     [7120312422] = true,  -- Substitua pelo UserId do "zenitsu_games05"
@@ -32,7 +32,7 @@ local Window = Luna:CreateWindow({
     Subtitle = "Feito por Adolf Hitler", 
     LogoID = "82795327169782", 
     LoadingEnabled = true, 
-    LoadingTitle = "Carregando Aguarde", 
+    LoadingTitle = "!", 
     LoadingSubtitle = "", 
     ConfigSettings = {
         RootFolder = nil, 
@@ -285,13 +285,13 @@ local Button = Tab:CreateButton({
 })
 
 local Toggle = Tab:CreateToggle({
-    Name = "Auto farm Gás Beta",
-    Description = "Ative para farmar gás automatico",
+    Name = "Username hider",
+    Description = "Ative para nao mostrar seu nome(APENAS PARA VOCE)",
     CurrentValue = false,
     Callback = function(Value)
         getgenv().UsernameHider = Value
         if Value then
-            loadstring(game:HttpGet("https://raw.githubusercontent.com/Rafaasxs/Nexus-Menu-/refs/heads/main/tesao"))()
+            loadstring(game:HttpGet("https://pastebin.com/raw/g7RY6FH6"))()
         end
     end
 })
